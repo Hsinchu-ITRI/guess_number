@@ -11,9 +11,12 @@ Created on Sun Oct 31 11:44:18 2021
 
 import random
 
-r = random.randint(1, 100)
+r = random.randint(1, 10)
+count = 0
 while True:
-    number = int(input('請輸入整數數字 1~100 之間 : '))
+    number = int(input('請輸入整數數字 1~10 之間 : '))
+    count +=1
+    print('這是你猜的第', count, '次')
     if number == r:
         print('你猜中了!!')
         break
